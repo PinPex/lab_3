@@ -1,6 +1,7 @@
 ﻿using System.Text;
-internal class RomanNumber : ICloneable, IComparable
+public class RomanNumber : ICloneable, IComparable
 {
+    
     private int num;
     private string roman_str;
     public RomanNumber(int n)
@@ -72,4 +73,5 @@ internal class RomanNumber : ICloneable, IComparable
         else
             throw new RomanNumberException("Number has not found");
     }
+
 }
